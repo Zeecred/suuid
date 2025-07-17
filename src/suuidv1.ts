@@ -22,7 +22,7 @@ function getTimestampHex(): string {
   return dec2hex(Number(tsStr));
 }
 
-export default function suuidv1(options?: ISuuidOptions): string {
+export function suuidv1(options?: ISuuidOptions): string {
   // eslint-disable-next-line @stylistic/max-len
   const charset = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789_';
   const {
@@ -37,7 +37,7 @@ export default function suuidv1(options?: ISuuidOptions): string {
   const remainingLen = length - totalFixedLen;
 
   if (length < 0) throw new Error('Length must be non-negative');
-  if (remainingLen < 0) return ''; // Não é possível gerar ID menor que prefixo+timestamp+suffix
+  if (remainingLen < 0) return '';
 
   let bytes = new Uint8Array(remainingLen);
 
