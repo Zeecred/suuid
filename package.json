@@ -1,9 +1,9 @@
 {
-  "name": "suuid",
+  "name": "@lfcsistemas/suuid",
+  "version": "1.0.2",
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.0.2",
   "description": "Secure, short and unique ID generator using crypto entropy. Lightweight and fast.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
