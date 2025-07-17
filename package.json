@@ -1,5 +1,8 @@
 {
   "name": "@lfcalegari/suuid",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "1.0.2",
   "description": "Secure, short and unique ID generator using crypto entropy. Lightweight and fast.",
   "main": "dist/index.js",
@@ -30,8 +33,5 @@
     "typescript-eslint": "^8.37.0",
     "undici-types": "^7.11.0",
     "vitest": "^3.2.4"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
