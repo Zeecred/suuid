@@ -1,6 +1,6 @@
 {
   "name": "@lfcalegari/suuid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Secure, short and unique ID generator using crypto entropy. Lightweight and fast.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
