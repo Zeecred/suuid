@@ -5,7 +5,6 @@ import suuidv1 from '../src/suuidv1';
 describe('generateShortId', () => {
   it('should generate an ID with default length', () => {
     const id = suuidv1();
-    console.log('Generated ID:', id);
     expect(id.length).toBe(DEFAULT_SUUID_V1_LENGTH);
   });
 
