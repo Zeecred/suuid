@@ -1,0 +1,1 @@
+export const DEFAULT_SUUID_V1_LENGTH = 36;
