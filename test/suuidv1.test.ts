@@ -85,13 +85,13 @@ describe('generateShortId', () => {
   });
 
   // eslint-disable-next-line @stylistic/max-len
-  it('should generate 1 character ID (returns empty string, pois não cabe prefixo+timestamp)', () => {
+  it('should generate 1 character ID (returns empty string, as prefix+timestamp doesn\'t fit)', () => {
     const id = suuidv1({ length: 1 });
     expect(id).toBe('');
   });
 
   // eslint-disable-next-line @stylistic/max-len
-  it('should generate 5 character ID (returns empty string, pois não cabe prefixo+timestamp)', () => {
+  it('should generate 5 character ID (returns empty string, as prefix+timestamp doesn\'t fit)', () => {
     const id = suuidv1({ length: 5 });
     expect(id).toBe('');
   });
