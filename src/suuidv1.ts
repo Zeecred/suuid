@@ -32,7 +32,7 @@ export function suuidv1(options?: ISuuidOptions): string {
   } = options || {};
 
   const tsHex = getTimestampHex();
-  const prefixStr = (prefix || '').padStart(2, '0');
+  const prefixStr = prefix || '';
   const totalFixedLen = prefixStr.length + tsHex.length + suffix.length;
   const remainingLen = length - totalFixedLen;
 
