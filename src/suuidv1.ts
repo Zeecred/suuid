@@ -15,8 +15,10 @@ function dec2hex(n: number): string {
 
 function getTimestampHex(): string {
   const year = Number(new Date().getFullYear().toString().slice(-2));
-  // eslint-disable-next-line @stylistic/max-len
-  const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000);
+
+  const dayOfYear = Math
+    .floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)
+      .getTime()) / 86400000);
   const beat = Math.floor((Date.now() / 86400) % 1000);
   const tsStr = `${year}${dayOfYear.toString().padStart(3, '0')}${beat}`;
   return dec2hex(Number(tsStr));
